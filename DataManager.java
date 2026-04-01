@@ -3,7 +3,7 @@ import java.io.*;
 
 public class DataManager {
     public static void main(String[] args) {
-        ArrayList<IMBD> roster = new ArrayList<>();
+        ArrayList<IMDB> roster = new ArrayList<>();
         String fileName = "IMDB Top 1000.csv";
 
         try {
