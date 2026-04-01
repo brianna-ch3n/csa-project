@@ -1,19 +1,19 @@
-public class IMBD {
+public class IMDB {
     private String movie;
     private int year;
-    private int mins;
+    private int duration;
     private String genre;
-    private int IMBDrating;
+    private double imdbRating;
     private String star1;
     private String star2;
     private String star3;
     
-    public IMBD(String movie, int year, int mins, String genre, int IMBDrating, String star1, String star2, String star3) {
+    public IMDB(String movie, int year, int duration, String genre, double imdbRating, String star1, String star2, String star3) {
         this.movie = movie;
         this.year = year;
-        this.mins = mins;
+        this.duration = duration;
         this.genre = genre;
-        this.IMBDrating = IMBDrating;
+        this.imdbRating = imdbRating;
         this.star1 = star1;
         this.star2 = star2;
         this.star3 = star3;  
@@ -28,16 +28,16 @@ public class IMBD {
         return year;
     }
     
-    public int getMins() {
-        return mins;
+    public int getDuration() {
+        return duration;
     }
     
     public String getGenre() {
         return genre;
     }
     
-    public int getIMBDrating() {
-        return IMBDrating;
+    public double getImdbRating() {
+        return imdbRating;
     }
     
     public String getStar1() {
@@ -61,16 +61,16 @@ public class IMBD {
         this.year = year;
     }
     
-    public void setMins(int mins) {
-        this.mins = mins;
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
     
     public void setGenre(String genre) {
         this.genre = genre;
     }
     
-    public void setIMBDrating(int IMBDrating) {
-        this.IMBDrating = IMBDrating;
+    public void setImdbRating(double imdbRating) {
+        this.imdbRating = imdbRating;
     }
     
     public void setStar1(String star1) {
@@ -88,12 +88,12 @@ public class IMBD {
     // toString method
     @Override
     public String toString() {
-        return "IMBD{" +
+        return "IMDB{" +
                 "movie='" + movie + '\'' +
                 ", year=" + year +
-                ", mins=" + mins +
+                ", duration=" + duration +
                 ", genre='" + genre + '\'' +
-                ", IMBDrating=" + IMBDrating +
+                ", imdbRating=" + imdbRating +
                 ", star1='" + star1 + '\'' +
                 ", star2='" + star2 + '\'' +
                 ", star3='" + star3 + '\'' +
