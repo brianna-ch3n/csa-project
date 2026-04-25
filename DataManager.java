@@ -89,6 +89,13 @@ public class DataManager {
             }
         } 
 
+        // TOP 5 MOVIES
+        System.out.println("\nTop 5 Movies:");
+        for (int i = 0; i < 5 && i < roster.size(); i++) {
+            System.out.println((i + 1) + ". " + roster.get(i).getMovie()
+                + " - " + roster.get(i).getImdbRating());
+        }
+
         // final output
         System.out.println("\nIMDB ANALYSIS");
         System.out.println("Total Movies: " + roster.size());
